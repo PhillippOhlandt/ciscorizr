@@ -1,0 +1,184 @@
+/*
+Copyright 2015 Phillipp Ohlandt
+
+This file is part of Ciscorizr.
+
+Ciscorizr is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Ciscorizr is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Ciscorizr.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von Ciscorizr.
+
+Ciscorizr ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder späteren
+veröffentlichten Version, weiterverbreiten und/oder modifizieren.
+
+Ciscorizr wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
+*/
+
+.head .adminarea{
+	margin-top:6px;
+}
+
+#loginpage #loginform{
+	margin-top:50px;
+}
+
+nav, nav ul, nav li{
+	overflow:hidden;
+}
+
+nav li{
+	float: left;
+	margin:5px;
+}
+
+nav li:first-child{
+	margin-left:0px;
+}
+
+nav li.username{
+	font-weight:bold;
+}
+
+.no-content{
+	text-align:center;
+	color:#999;
+	font-size:16px;
+}
+
+
+/*start content-list*/
+.content-table{
+	margin:15px;
+	margin-top:0px;	
+}
+
+.content-table div div div{
+	margin:5px;
+}
+
+.content-table .color.color_bg{
+	color:white;
+}
+
+.content-table .list-head {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+
+.content-table .list-entry{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	background:#eee;
+}
+
+.content-table .list-entry.not-visible{
+	background:#fff;
+	color:#ccc;
+}
+
+.content-table .list-entry:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/*end content-list*/
+
+
+
+@media only screen and (max-width : 1200px){
+ 
+}
+ 
+@media only screen and (max-width : 991px){
+  	/*start content-list*/
+	.content-table .list-head{
+		display:none;
+	}
+
+	.content-table .list-entry{
+		border-bottom:1px solid #ccc;
+	}
+
+	.content-table .list-entry.not-visible{
+		border-bottom:1px solid #ddd;
+	}
+
+	.content-table .list-entry:nth-child(2){
+		border-top:1px solid #ddd;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.content-table .list-entry > div > div{
+		border-bottom:1px solid #ddd;
+	}
+
+	.content-table .list-entry.not-visible > div > div{
+		border-bottom:1px solid #eee;
+	}
+
+	.content-table .list-entry > div:last-child > div{
+		border-bottom:none;
+	}
+
+	.content-table .list-entry .pull-right{
+		float:none !important;
+		text-align:right;
+	}
+
+
+	.text-id:before{
+		content: 'ID: ';
+	}
+
+	.text-title:before{
+		content: 'Title: ';
+	}
+
+	.text-chapters:before{
+		content: 'Chapters: ';
+	}
+
+	.text-questions:before{
+		content: 'Questions: ';
+	}
+
+	.text-seconds:before{
+		content: 'Seconds: ';
+	}
+
+	/*end content-list*/
+}
+ 
+@media only screen and (max-width : 767px){
+
+}
+ 
+@media only screen and (max-width : 480px){
+ 
+}
+ 
+@media only screen and (max-width : 320px){
+ 
+}

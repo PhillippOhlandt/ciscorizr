@@ -1,0 +1,144 @@
+/*
+Copyright 2015 Phillipp Ohlandt
+
+This file is part of Ciscorizr.
+
+Ciscorizr is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Ciscorizr is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Ciscorizr.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von Ciscorizr.
+
+Ciscorizr ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder späteren
+veröffentlichten Version, weiterverbreiten und/oder modifizieren.
+
+Ciscorizr wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
+*/
+
+.countdown{
+	margin-top:6px;
+}
+
+.btn-course, .btn-chapter, .btn-answer{
+	margin-left:2px;
+	margin-right:2px;
+	margin-top:4px;
+	width:100%;
+	white-space: normal
+}
+
+div.newGame{
+	margin-top:20px;
+	text-align:center;
+}
+
+.welcomeText{
+
+}
+
+.headline{
+	font-size:35px;
+	color:#777;
+	margin-top:10px;
+}
+
+.headline .resultText{
+	color:#333;
+}
+
+.select-buttons{
+	margin-top:20px;
+}
+
+
+.question{
+	font-size:24px;
+}
+
+
+.playerPage h2{
+	font-size:24px;
+}
+
+.playerPage .configurationText ul{
+	padding:0px;
+	list-style-type: none;
+}
+
+.playerPage .configurationText ul li{
+	color:#777;
+}
+
+.playerPage .configurationText ul li span{
+	color:#111;
+}
+
+.playerPage div{
+	color:#111;
+}
+
+.playerPage .scoreText{
+	margin-bottom:10px;
+}
+
+.playerPage + .playerQuestions .playerQuestion{
+	color:#999;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.playerPage + .playerQuestions .playerQuestion:last-child .divider{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1200px){
+ 
+}
+ 
+@media only screen and (max-width : 991px){
+ 
+}
+ 
+@media only screen and (max-width : 767px){
+
+}
+ 
+@media only screen and (max-width : 480px){
+  .headline{
+  	font-size:24px;
+ }
+}
+ 
+@media only screen and (max-width : 320px){
+ 
+}

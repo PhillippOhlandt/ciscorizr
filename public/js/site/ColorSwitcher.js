@@ -1,0 +1,76 @@
+/*
+Copyright 2015 Phillipp Ohlandt
+
+This file is part of Ciscorizr.
+
+Ciscorizr is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Ciscorizr is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Ciscorizr.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von Ciscorizr.
+
+Ciscorizr ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder späteren
+veröffentlichten Version, weiterverbreiten und/oder modifizieren.
+
+Ciscorizr wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
+*/
+
+function ColorSwitcher(){
+
+	this.colorCount = 0;
+	this.currentColorCount = 1;
+	this.hoverSuffix = "_hover";
+	this.fontSuffix = "_font";
+	this.colorClass = "color";
+
+	this.nextColor = function() {
+
+			var nextColorCount = this.currentColorCount + 1;
+			if(nextColorCount > this.colorCount){
+
+				nextColorCount = 1;
+			}
+
+			var nextColorClass = this.colorClass + "-" + nextColorCount;
+			var nextColorHoverClass = this.colorClass + this.hoverSuffix + "-" + nextColorCount;
+			var nextColorFontClass = this.colorClass + this.fontSuffix + "-" + nextColorCount;
+
+			for(var i = 1; i <= this.colorCount; i++){
+				var currentColorClass = this.colorClass + "-" + i;
+		 		var currentColorHoverClass = this.colorClass + this.hoverSuffix + "-" + i;
+		 		var currentColorFontClass = this.colorClass + this.fontSuffix + "-" + i;
+
+		 		$("." + currentColorClass).each(function() {
+			    	$(this).removeClass(currentColorClass).addClass(nextColorClass);
+				});
+
+				$("." + currentColorHoverClass).each(function() {
+				    $(this).removeClass(currentColorHoverClass).addClass(nextColorHoverClass);
+				});
+
+				$("." + currentColorFontClass).each(function() {
+				    $(this).removeClass(currentColorFontClass).addClass(nextColorFontClass);
+				});
+			}	 		
+	 
+	 		this.currentColorCount = nextColorCount;
+	    }
+
+}
