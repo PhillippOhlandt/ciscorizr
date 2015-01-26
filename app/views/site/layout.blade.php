@@ -57,15 +57,10 @@ Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
 
         <script type="text/javascript">
             var cs = new ColorSwitcher();
-
             cs.colorCount = 6;
-            
+
+            //weil wegen die Sicherheit :D
             var csrf = "{{ csrf_token(); }}";
-
-            $(function(){
-                    //cs.nextColor();
-
-            });
             
         </script>
 

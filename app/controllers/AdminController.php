@@ -37,7 +37,6 @@ Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
 class AdminController extends BaseController {
 
 	public function index(){
-		//return $this->catstatus->get('NOT_FOUND');
 		$courses = Course::with('chapters.questions')->get();
 		return View::make('admin.pages.courses.index', ['courses' => $courses]);
 	}

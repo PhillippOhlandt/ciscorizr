@@ -82,6 +82,9 @@ class CourseController extends BaseController {
 			return Redirect::back()->withInput()->with(['errors' => $errors]);
 		}
 
+		/*sqlite supports no cascade delete,
+		 *so we have to delete the item and all child items manually
+		 * */
 		for($i = 0; $i < count($course->chapters); $i++){
 			$chapter = $course->chapters[$i];
 			for($j = 0; $j < count($chapter->questions); $j++){

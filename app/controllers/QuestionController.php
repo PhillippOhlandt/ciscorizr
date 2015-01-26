@@ -90,6 +90,9 @@ class QuestionController extends BaseController {
 			return Redirect::back()->withInput()->with(['errors' => $errors]);
 		}
 
+		/*sqlite supports no cascade delete,
+		 *so we have to delete the item and all child items manually
+		 * */
 		for($k = 0; $k < count($question->answers); $k++){
 			$answer = $question->answers[$k];
 			$answer->delete();
