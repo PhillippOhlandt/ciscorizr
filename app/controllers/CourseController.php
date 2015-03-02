@@ -50,7 +50,7 @@ class CourseController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type course name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type course name!!! '. CatStatus::get('NOT_FOUND'),
 		     'title.unique' => $credentials['title'] . ' is already taken!'
 		 );
 
@@ -124,7 +124,7 @@ class CourseController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type course name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type course name!!! '. CatStatus::get('NOT_FOUND'),
 		     'title.unique' => $credentials['title'] . ' is already taken!'
 		 );
 

@@ -53,7 +53,7 @@ class ChapterController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type chapter name!!! '.$this->catstatus->get('NOT_FOUND')
+		     'title.required' => 'Y U NO type chapter name!!! '. CatStatus::get('NOT_FOUND')
 		 );
 
         $validator = Validator::make($credentials, $rules, $messages); 
@@ -129,7 +129,7 @@ class ChapterController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type chapter name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type chapter name!!! '. CatStatus::get('NOT_FOUND'),
 		     'title.unique' => $credentials['title'] . ' is already taken!'
 		 );
 

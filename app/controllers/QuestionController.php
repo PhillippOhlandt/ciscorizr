@@ -55,9 +55,9 @@ class QuestionController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type question name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type question name!!! '. CatStatus::get('NOT_FOUND'),
 		     'granted_time.required' => 'Y U NO type granted time?!',
-		     'granted_time.numeric' => 'Y U NO type seconds in the field for SECONDS!!! '.$this->catstatus->get('NOT_FOUND')
+		     'granted_time.numeric' => 'Y U NO type seconds in the field for SECONDS!!! '. CatStatus::get('NOT_FOUND')
 		 );
 
         $validator = Validator::make($credentials, $rules, $messages); 
@@ -125,9 +125,9 @@ class QuestionController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type question name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type question name!!! '. CatStatus::get('NOT_FOUND'),
 		     'granted_time.required' => 'Y U NO type granted time?!',
-		     'granted_time.numeric' => 'Y U NO type seconds in the field for SECONDS!!! '.$this->catstatus->get('NOT_FOUND')
+		     'granted_time.numeric' => 'Y U NO type seconds in the field for SECONDS!!! '. CatStatus::get('NOT_FOUND')
 		 );
 
         $validator = Validator::make($credentials, $rules, $messages); 

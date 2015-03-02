@@ -42,7 +42,7 @@ class ApiController extends BaseController {
 		$data = array(
 			"type" => "chapters",
 			"count" => count($chapters),
-			"cat" => $this->catstatus->get("SUCCESS"),
+			"cat" => CatStatus::get("SUCCESS"),
 			"parent" => array(
 						"type" => "course",
 						"id" => $course->id,
@@ -92,7 +92,7 @@ class ApiController extends BaseController {
 		$data = array(
 			"type" => "questions",
 			"count" => count($questions),
-			"cat" => $this->catstatus->get("SUCCESS"),
+			"cat" => CatStatus::get("SUCCESS"),
 			"parent" => array(
 						"type" => "chapter",
 						"id" => $chapter->id,
@@ -122,7 +122,7 @@ class ApiController extends BaseController {
 
 		$data = array('hash' => $playerhash,
 					'betterAsPercent' => $betterAsPercent,
-					"cat" => $this->catstatus->get("SUCCESS")
+					"cat" => CatStatus::get("SUCCESS")
 					);
 		return $data;
 	}

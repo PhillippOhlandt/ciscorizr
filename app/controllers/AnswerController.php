@@ -46,7 +46,7 @@ class AnswerController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type answer name!!! '.$this->catstatus->get('NOT_FOUND'),
+		     'title.required' => 'Y U NO type answer name!!! '. CatStatus::get('NOT_FOUND'),
 		 );
 
         $validator = Validator::make($credentials, $rules, $messages); 
@@ -79,7 +79,7 @@ class AnswerController extends BaseController {
         );
 
         $messages = array(
-		     'title.required' => 'Y U NO type answer name!!! '.$this->catstatus->get('NOT_FOUND')
+		     'title.required' => 'Y U NO type answer name!!! '. CatStatus::get('NOT_FOUND')
 		 );
 
         $validator = Validator::make($credentials, $rules, $messages); 

@@ -36,11 +36,9 @@ Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
 
 class BaseController extends Controller {
 
-	public $catstatus;
 
-	public function __construct(CatStatus $catstatus){
-		$this->catstatus = $catstatus;
-		$this->catstatus->set(array('NOT_FOUND' => '(ノಠ益ಠ)ノ彡┻━┻'));
+	public function __construct(){
+		CatStatus::set(array('NOT_FOUND' => '(ノಠ益ಠ)ノ彡┻━┻'));
 	}
 
 	protected function setupLayout()
